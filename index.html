@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <div class="col-md-12 text-center">
+                <h1>Previsão do Tempo</h1>
+                <div class="form-group">
+                    <input type="text" id="city-input" class="form-control" placeholder="Digite a cidade">
+                </div>
+                <button id="search-button" class="btn btn-primary">Buscar</button>
+                <div id="weather-container" class="mt-4 d-none">
+                    <h3 id="temperature"></h3>
+                    <h4 id="description"></h4>
+                    <img id="weather-icon" src="" alt="Ícone do Tempo">
+                </div>
+                <div id="error-message" class="text-danger mt-3"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <span class="text-muted">Criado por Marco Flores</span>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
